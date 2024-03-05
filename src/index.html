@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"  >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Control-Panel</title>
+</head>
+
+<body>
+    <header>
+        <section class="header" >
+            <div class="header-container" >
+                <div>
+                    <h1 id="header-title" >Control-Panel</h1>
+                </div>
+                <div class="header-icon" >
+                    <img id="icon-control" src="./images/icon1.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div class="no-item" >
+                <div>
+                    <div >
+                        <h2 id="shopping-cart-title" >No Product Yet</h2>
+                    </div>
+                    <div>
+                        <img id="shopping-cart-icon" src="./images/shopping-cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="btn-container" >
+            <button>Add Product +</button>
+        </div>
+        <div>
+            <div class="modal-container" >
+                <form class="modal-content" >
+                    <div class="header-modal" >
+                        <h3>Choose Your Product</h3>
+                        <span><img id="close-btn" src="./images/close-button.png" alt=""></span>
+                    </div>
+                    <span class="line" ></span>
+                    <div class="main-modal">
+                        <div class="modal-img-container" >
+                            <img id="modal-img" src="" >
+                        </div>
+
+                        <label for="file-browser" id="label-browser" >Click Choose File</label>
+                        <input type="file" id="file-browser" style="display: none;" >
+
+                        <label for="p-name">Enter Name</label>
+                        <input type="text" id="p-name" placeholder="Product Name" required >
+
+                        <label for="p-dec">Enter Description</label>
+                        <textarea name="Product-Description" id="p-dec" cols="30" rows="10" maxlength="150" >Description</textarea>
+
+                        <label for="p-con">Enter Count</label>
+                        <input type="number" id="p-con" placeholder="Stock Count" min="0" max="100" required >
+
+                        <input type="submit" id="submit-btn" value="Submit" >
+
+                    </div>
+                    <div class="footer-modal"></div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
