@@ -20,7 +20,28 @@
             </div>
         </section>
     </header>
+    <div class="search" >
+        <div class="seach-wraper" >
+            <input type="search" class="search-input" placeholder="Search..." maxlength="15"  >
+        </div>
+        <select name="filter" id="filter" >
+            <option value="0">filter:</option>
+            <option value="1">Stock &gt; 5</option>
+            <option value="2">Stock &lt; 5</option>
+        </select>
+    </div>
     <main>
+        <!-- slider -->
+
+        <div class="slider-btn" >
+            <span id="left-slider-btn" >
+                <img src="./images/arrow-left.png" alt="arrow-left"  >
+            </span>
+            <span id="right-slider-btn" >
+                <img src="./images/arrow-right.png" alt="arrow-right"  >
+            </span>
+        </div>
+
         <!-- No Item Sec -->
         <section >
             <div class="no-item" >
@@ -35,39 +56,48 @@
             </div>
         </section>
 
-            <div class="cart-container" >
-                <!-- top cart -->
-                <div class="cart-top-container" >
-                    <!-- image-p -->
-                    <div class="image-container" >
-                        <img src="" alt="product picture">
-                    </div>
-                    <!-- count -->
-                    <div class="count-container" >
-                        <h4>Stock:</h4>
-                        <span>3</span>
-                        <img src="images/ready-stock.png" alt="">
-                    </div>
-                </div>
-                <!-- main-cart -->
-                <!-- descrip -->
-                <div class="descrip-title" >
-                    <h3>Product Name</h3>
-                </div>
-                <!-- bottom cart -->
-                <div class="bottom-cart" >
-                    <div class="description-content" >
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                             Necessitatibus mollitia praesentium consequatur aspernatur
-                              deleniti aliquam ullam illum eius ipsam? Fuga.</p>
-                    </div>
-                    <!-- btns -->
-                    <div class="twice-btn" >
-                        <span id="edit" >Edit</span>
-                        <span id="del" >Delete</span>
-                    </div>
-                </div>
+        <div class="cart" >
+            <div class="swiper" >
+
             </div>
+            <!--
+                <div class="cart-container" >
+                    top cart
+                    <div class="cart-top-container" >
+                        image-p 
+                        <div class="image-container" >
+                            <img src="" alt="product picture" class= "image-product">
+                        </div>
+                        count 
+                        <div class="count-container" >
+                            <h4>Stock:</h4>
+                            <span>3</span>
+                            <img src="images/ready-stock.png" alt="">
+                        </div>
+                    </div>
+                    main-cart 
+                    descrip 
+                    <div class="descrip-title" >
+                        <h3>Product Name</h3>
+                    </div>
+                    bottom cart 
+                    <div class="bottom-cart" >
+                        <div class="description-content" >
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Necessitatibus mollitia praesentium consequatur aspernatur
+                                  deleniti aliquam ullam illum eius ipsam? Fuga.</p>
+                        </div>
+                        btns 
+                        <div class="twice-btn" >
+                            <span class="edit" >Edit</span>
+                            <span class="del" >Delete</span>
+                        </div>
+                    </div>
+                </div>
+
+            -->
+        </div>
+
 
 
         <!-- Add Btn -->
@@ -77,30 +107,31 @@
         <!-- Modal -->
         <div>
             <div class="modal-container" >
-                <form class="modal-content" >
+                <form class="modal-content">
                     <div class="header-modal" >
                         <h3>Choose Your Product</h3>
                         <span><img id="close-btn" src="./images/close-button.png" alt=""></span>
                     </div>
-                    <span class="line" ></span>
+                         <span class="line" ></span>
                     <div class="main-modal">
                         <div class="modal-img-container" >
                             <img id="modal-img" src="" >
                         </div>
 
                         <label for="file-browser" id="label-browser" >Click Choose File</label>
-                        <input type="file" id="file-browser" style="display: none;" >
+                        <input type="file" id="file-browser" src=""  style="display: none;"  >
 
                         <label for="p-name">Enter Name</label>
-                        <input type="text" id="p-name" placeholder="Product Name" required >
+                        <input type="text" id="p-name" placeholder="Product Name"  >
 
                         <label for="p-dec">Enter Description</label>
                         <textarea name="Product-Description" id="p-dec" cols="30" rows="10" maxlength="150" >Description</textarea>
 
                         <label for="p-con">Enter Count</label>
-                        <input type="number" id="p-con" placeholder="Stock Count" min="0" max="100" required >
+                        <input type="number" id="p-con" placeholder="Stock Count" min="1" max="100" >
 
-                        <input type="submit" id="submit-btn" value="Submit" >
+                        <input type="button" id="submit-btn" value="Submit" >
+                        <button class="editTor" >edit</button>
 
                     </div>
                 </form>
@@ -108,7 +139,6 @@
         </div>
     </main>
     <footer></footer>
-
 
 
 
